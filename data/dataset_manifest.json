@@ -1,0 +1,60 @@
+{
+  "Np": 8,
+  "Nd_per_block": 256,
+  "snr_db": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "feature_order": [
+    "Re_y1",
+    "Re_y2",
+    "Im_y1",
+    "Im_y2",
+    "Re_H11",
+    "Re_H12",
+    "Re_H21",
+    "Re_H22",
+    "Im_H11",
+    "Im_H12",
+    "Im_H21",
+    "Im_H22"
+  ],
+  "class_map": {
+    "0": [
+      -1,
+      -1
+    ],
+    "1": [
+      -1,
+      1
+    ],
+    "2": [
+      1,
+      -1
+    ],
+    "3": [
+      1,
+      1
+    ]
+  },
+  "note": "Balanced shuffled block-level SNR assignment is a reconstruction choice.",
+  "train": {
+    "samples": 200000,
+    "seed": 1001,
+    "channel_realizations": 782
+  },
+  "val": {
+    "samples": 40000,
+    "seed": 2001,
+    "channel_realizations": 157
+  },
+  "test": {
+    "samples": 40000,
+    "seed": 3001,
+    "channel_realizations": 157
+  }
+}
